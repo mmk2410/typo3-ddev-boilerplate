@@ -1,0 +1,18 @@
+#+startup: indent
+#+title: TYPO3 DDEV-Local Boilerplate
+
+[[https://ddev.readthedocs.io/][DDEV-Local]] is a tool for setting up local PHP development environments within few minutes using Docker. It includes specific support for various PHP platforms including [[https://typo3.org][TYPO3]].
+
+While it is quite simple to use, it requires a little bit of initial setup for new or existing projects. This boilerplate repository contains an example configuration for a DDEV-Local TYPO3 setup. As with everything else there is more than one way to do it and of course you do not need to follow this configuration (exactly). Please be aware that this repository *only* includes the configuration for DDEV but *not* the boilerplate for a TYPO3 extension. It is necessary to add the therefore required configuration yourself. So this repository may be more used as a reference point then as a clone-and-start-coding setup.
+
+* How to use it
+
+To start with it is of course required to install =ddev= first. After setting up a TYPO3 extension structure including this boilerplate (beware to customize =.ddev/config.yaml= and =composer.json= to your needs) it is necessary to run =ddev composer install= for setting up the TYPO3 project and afterwards start the project with =ddev start=. By running =ddev launch= or visiting the displayed URL you can continue the setup of the local TYPO3 installation in your browser and start developing the extension in the root folder of the TYPO3 project.
+
+* How it works
+
+The boilerplate contains a =composer.json= file for *TYPO3 v10* created with =ddev composer create "typo3/cms-base-distribution:^10" --prefer-dist=. The corresponding =composer.lock= file is also included in the =.gitignore=. In the directory =.ddev= there is a basic =config.yaml= file containing the DDEV configuration which is accompanied with the =docker-composer.environment.yaml= file for setting the =TYPO3_CONTEXT= to =Development=. Additionally the =config.yaml= file and the =composer.json= define that the TYPO3 installation and configuration is kept in the =.build= directory (which is also ignored in =.gitignore=). The last file to mention is the =.gitattributes= which defines =export-ignore= rules for the relevant files/directories in this repository.
+
+* Credits
+
+All credits go to contributors of the [[https://github.com/benjaminkott/bootstrap_package][bootstrap_package]] especially Benjamin Kott and Gilbertsoft. The content of this repository is more or less exactly modeled after it.
