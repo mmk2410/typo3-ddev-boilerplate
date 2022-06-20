@@ -1,2 +1,9 @@
+# ddev/composer/TYPO3 installation directory
 .build
-composer.lock
+
+# Operating Systems
+.DS_Store
+
+# Editors
+.idea
+nbproject
