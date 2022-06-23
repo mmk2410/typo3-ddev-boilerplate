@@ -3,7 +3,7 @@
 
 [[https://ddev.readthedocs.io/][DDEV-Local]] is a tool for setting up local PHP development environments within few minutes using Docker. It includes specific support for various PHP platforms including [[https://typo3.org][TYPO3]].
 
-While it is quite simple to use, it requires a little bit of initial setup for new or existing projects. This boilerplate repository contains an example configuration for a DDEV-Local TYPO3 setup. As with everything else there is more than one way to do it and of course you do not need to follow this configuration (exactly). Please be aware that this repository *only* includes the configuration for DDEV but *not* the boilerplate for a TYPO3 extension. It is necessary to add the therefore required configuration yourself. So this repository may be more used as a reference point then as a clone-and-start-coding setup.
+While it is quite simple to use, it requires a little bit of initial setup for new or existing projects. This boilerplate repository contains an example configuration for a DDEV-Local TYPO3 setup. As with everything else there is more than one way to do it and of course you do not need to follow this configuration (exactly). Please be aware that this repository *only* includes a very basic boilerplate for a TYPO3 extension. It is perhaps necessary to add some configuration yourself.
 
 * How to use it
 
